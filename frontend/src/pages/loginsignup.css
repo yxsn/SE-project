@@ -99,3 +99,24 @@ body {
   padding: 0;
   margin-left: 5px;
 }
+.alt-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+.google-logo {
+  height: 20px;
+  margin-right: 1rem;
+}
+.continue {
+  display: flex;
+  justify-content: center;
+}

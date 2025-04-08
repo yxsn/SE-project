@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./signuppage.css";
+import "./loginsignup.css";
 
-const signuppage = () => {
+const Loginsignup = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [hovered, setHovered] = useState(false);
 
@@ -9,9 +9,13 @@ const signuppage = () => {
 
   return (
     <div className="container">
-      <div className="header">
-        <img src="/logo.png" alt="EcoRide Logo" className="logo" />
-        <span className="logo-text">EcoRide</span>
+      <div className="logobox">
+        <img
+          src="https://img.icons8.com/?size=100&id=9345&format=png&color=000000"
+          alt="EcoRide Logo"
+          className="signin-page-logo"
+        />
+        <span className="signin-page-logo-text">EcoRide</span>
       </div>
 
       <div className="card">
@@ -50,20 +54,32 @@ const signuppage = () => {
           )}
           <button
             type="submit"
-            className={`button ${hovered ? "hover" : ""}`}
+            className={hovered ? "button hover" : "button"}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
             {isLogin ? "Login" : "Sign Up"}
           </button>
         </form>
-
         <div className="alt-login">
-          <p>or continue with</p>
-          <button className="alt-button">🔒 Login with Google</button>
-          <button className="alt-button">🍎 Login with Apple</button>
+          <p className="continue">or continue with</p>
+          <button className="alt-button">
+            <img
+              src="https://img.icons8.com/?size=100&id=V5cGWnc9R4xj&format=png&color=000000"
+              alt="Google"
+              className="google-logo"
+            />{" "}
+            Login with Google
+          </button>
+          <button className="alt-button">
+            <img
+              src="https://img.icons8.com/?size=100&id=30840&format=png&color=000000"
+              alt="Google"
+              className="google-logo"
+            />{" "}
+            Login with Apple
+          </button>
         </div>
-
         <p className="toggle-text">
           {isLogin ? "Don't have an account? " : "Already have an account? "}
           <button onClick={toggleForm} className="toggle-button">
@@ -75,4 +91,4 @@ const signuppage = () => {
   );
 };
 
-export default signuppage;
+export default Loginsignup;

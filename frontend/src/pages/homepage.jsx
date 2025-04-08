@@ -73,21 +73,21 @@ const features = [
     title: "Eco-Friendly",
     description:
       "Every ride you share helps reduce the carbon footprint and promotes a sustainable future.",
-    image: "/eco-friendly.png",
+    image: "https://img.icons8.com/?size=100&id=81373&format=png&color=000000",
   },
   {
     icon: "📊",
     title: "Track Emissions",
     description:
       "Get detailed insights on your emission savings for every trip you take.",
-    image: "/track-emissions.png",
+    image: "https://img.icons8.com/?size=100&id=111270&format=png&color=000000",
   },
   {
     icon: "🎁",
     title: "Carbon-Points",
     description:
       "Earn carbon-points and redeem them for exciting gift cards and offers.",
-    image: "/rewards.png",
+    image: "https://img.icons8.com/?size=100&id=66724&format=png&color=000000",
   },
 ];
 
